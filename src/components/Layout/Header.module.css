@@ -1,0 +1,83 @@
+header {
+  height: 50vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.image {
+  height: 100%;
+  margin-right: 5rem;
+}
+.title {
+  font-size: 3rem;
+}
+.price {
+  font-size: 2rem;
+}
+.btn {
+  display: block;
+  margin: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 222, 0, 1) 0%,
+    rgba(255, 158, 0, 1) 100%
+  );
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 300px;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 3rem;
+  border: none;
+  transition: 0.2s ease;
+}
+.heading {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.preview {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../../assets/food2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .image {
+    margin: auto;
+    width: 100%;
+  }
+  .btn {
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .price {
+    font-size: 1.5rem;
+  }
+  p {
+    margin: 10px;
+  }
+  .cover {
+    height: 50vh;
+  }
+}
